@@ -2,26 +2,20 @@ import React from "react";
 import Button from "./button";
 
 const Services = () => {
-  const renderTable = (title: string, services: { no: number; service: string; price: string }[]) => (
-    <div className="mb-8 overflow-x-auto">
-      <table className="w-full border-collapse border border-gray-200 text-sm lg:text-lg">
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="border border-gray-300 px-4 py-2">No.</th>
-            <th className="border border-gray-300 px-4 py-2">{title}</th>
-            <th className="border border-gray-300 px-4 py-2">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          {services.map((item) => (
-            <tr key={item.no} className="text-center cursor-pointer hover:bg-gray-100">
-              <td className="border border-gray-300 px-4 py-2">{item.no}</td>
-              <td className="border border-gray-300 px-4 py-2">{item.service}</td>
-              <td className="border border-gray-300 px-4 py-2">{item.price}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  const renderCards = (title: string, services: { no: number; service: string; price: string }[]) => (
+    <div className="mb-8">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center my-16">{title}</h2>
+      <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {services.map((item) => (
+          <div
+            key={item.no}
+            className="border border-teal-500 rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg font-bold mb-2">{item.service}</h3>
+            <p className="text-gray-700">{item.price}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 
@@ -32,7 +26,7 @@ const Services = () => {
           Schedule a Meeting with Me
         </h1>
 
-        {renderTable("Basic Services", [
+        {renderCards("Basic Services", [
           { no: 1, service: "Customized switchwords", price: "INR 555" },
           { no: 2, service: "Relationship improvement reiki", price: "INR 999" },
           { no: 3, service: "Aura Healing", price: "INR 1000" },
@@ -43,7 +37,7 @@ const Services = () => {
           { no: 8, service: "Cord cutting from toxicity", price: "INR 5000" },
         ])}
 
-        {renderTable("Intermediate Services", [
+        {renderCards("Intermediate Services", [
           { no: 1, service: "Face reading", price: "INR 2000" },
           { no: 2, service: "Coffee Cup Readings", price: "INR 3500" },
           { no: 3, service: "Aakashic records readings", price: "INR 5000" },
@@ -51,7 +45,7 @@ const Services = () => {
           { no: 5, service: "Psychic medium readings", price: "INR 8000" },
         ])}
 
-        {renderTable("Advanced Services", [
+        {renderCards("Advanced Services", [
           { no: 1, service: "Dream Interpretation", price: "INR 2000" },
           { no: 2, service: "Removing Nazar/Hexes/Curses", price: "INR 3000" },
           { no: 3, service: "Manifestation techniques 1 hr session", price: "INR 5555" },
