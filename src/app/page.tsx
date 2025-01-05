@@ -8,6 +8,7 @@ import Services from "@/components/services";
 import Button from "@/components/button";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 import ContactForm from "@/components/contactform";
+import Footer from "@/components/footer";
 
 const HomePage = () => {
   return (
@@ -107,10 +108,10 @@ const HomePage = () => {
         </div>
         <div className="flex-1 max-w-4xl mb-16 md:space-y-36">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-wide text-center lg:text-left">
-          Ready to give a better life another shot ?
+            Ready to give a better life another shot ?
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl leading-loose text-gray-700 mb-8 text-center lg:text-left">
-          My mission is to provide insightful and compassionate tarot readings that empower my clients to make informed decisions and live their best lives.
+            My mission is to provide insightful and compassionate tarot readings that empower my clients to make informed decisions and live their best lives.
           </p>
           <div className="flex justify-center lg:justify-start">
             <Button />
@@ -121,7 +122,11 @@ const HomePage = () => {
       {/* Testimonial Section */}
       <InfiniteMovingCardsDemo />
 
-    <ContactForm />
+      {/* Contact Section */}
+      <ContactForm />
+
+      {/* Footer Section */}
+      <Footer />
 
     </div>
   );
