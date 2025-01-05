@@ -6,7 +6,7 @@ import image3 from "../../public/image3.jpeg";
 import image4 from "../../public/image4.jpeg"
 import Services from "@/components/services";
 import Button from "@/components/button";
-import { InfiniteMovingCardsDemo } from "@/components/testimonials";
+import Testimonials from "@/components/testimonials";
 import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
 import PictureGallery from "@/components/picturegallery";
@@ -125,7 +125,7 @@ const HomePage = () => {
       <PictureGallery />
 
       {/* Testimonial Section */}
-      <InfiniteMovingCardsDemo />
+      <Testimonials />
 
       {/* Accordion Section */}
       <Accordion />

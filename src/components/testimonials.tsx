@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-export function InfiniteMovingCardsDemo() {
+function Testimonials() {
   return (
     <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden my-24">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center my-24">
@@ -16,6 +16,8 @@ export function InfiniteMovingCardsDemo() {
     </div>
   );
 }
+
+export default Testimonials
 
 const testimonials = [
   {
