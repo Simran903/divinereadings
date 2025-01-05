@@ -9,6 +9,7 @@ import Button from "@/components/button";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
+import { FocusCardsDemo } from "@/components/picturegallery";
 
 const HomePage = () => {
   return (
@@ -119,6 +120,8 @@ const HomePage = () => {
         </div>
       </div>
 
+      <FocusCardsDemo />
+
       {/* Testimonial Section */}
       <InfiniteMovingCardsDemo />
 
@@ -127,6 +130,7 @@ const HomePage = () => {
 
       {/* Footer Section */}
       <Footer />
+
 
     </div>
   );
