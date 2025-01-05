@@ -9,7 +9,7 @@ import Button from "@/components/button";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
-import { FocusCardsDemo } from "@/components/picturegallery";
+import PictureGallery from "@/components/picturegallery";
 import Accordion from "@/components/accordion";
 
 const HomePage = () => {
@@ -121,7 +121,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <FocusCardsDemo />
+      {/* PictureGallery Section */}
+      <PictureGallery />
 
       {/* Testimonial Section */}
       <InfiniteMovingCardsDemo />

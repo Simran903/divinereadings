@@ -6,7 +6,7 @@ import image4 from "../../public/picturegallery/IMG_20241215_171146.jpg";
 import image5 from "../../public/picturegallery/IMG_20241216_030049_374.jpg";
 import image6 from "../../public/picturegallery/IMG_20241216_030049_435.jpg";
 
-export function FocusCardsDemo() {
+function PictureGallery() {
   const cards = [
     { src: image2 },
     { src: image1 },
@@ -33,3 +33,5 @@ export function FocusCardsDemo() {
     </div>
   );
 }
+
+export default PictureGallery
