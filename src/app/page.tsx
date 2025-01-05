@@ -10,6 +10,7 @@ import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
 import { FocusCardsDemo } from "@/components/picturegallery";
+import Accordion from "@/components/accordion";
 
 const HomePage = () => {
   return (
@@ -125,12 +126,14 @@ const HomePage = () => {
       {/* Testimonial Section */}
       <InfiniteMovingCardsDemo />
 
+      {/* Accordion Section */}
+      <Accordion />
+
       {/* Contact Section */}
       <ContactForm />
 
       {/* Footer Section */}
       <Footer />
-
 
     </div>
   );
