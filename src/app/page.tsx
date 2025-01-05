@@ -7,6 +7,7 @@ import image4 from "../../public/image4.jpeg"
 import Services from "@/components/services";
 import Button from "@/components/button";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
+import ContactForm from "@/components/contactform";
 
 const HomePage = () => {
   return (
@@ -119,6 +120,9 @@ const HomePage = () => {
 
       {/* Testimonial Section */}
       <InfiniteMovingCardsDemo />
+
+    <ContactForm />
+
     </div>
   );
 };
