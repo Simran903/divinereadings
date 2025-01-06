@@ -77,8 +77,8 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#refunds-policy" className="hover:text-teal-500">
-                    Refunds Policy
+                  <a href="/refund-policy" className="hover:text-teal-500">
+                    Refund Policy
                   </a>
                 </li>
               </ul>

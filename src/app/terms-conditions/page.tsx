@@ -9,7 +9,6 @@ const TermsConditions: React.FC = () => {
     router.push("/")
   }
 
-
   return (
     <div className="bg-gray-50 min-h-screen py-8 px-4 md:px-16">
       <div className="mx-auto bg-white shadow-md rounded-lg p-28 tracking-wider space-y-12">
