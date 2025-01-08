@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import image1 from "../../public/image1.jpg";
-import image2 from "../../public/image2.png";
+// import image2 from "../../public/image2.png";
 import image3 from "../../public/image3.jpeg";
-import image4 from "../../public/image4.jpeg"
 import Services from "@/components/services";
 import Button from "@/components/button";
 import Testimonials from "@/components/testimonials";
@@ -11,13 +10,14 @@ import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
 import PictureGallery from "@/components/picturegallery";
 import Accordion from "@/components/accordion";
+import accreditation from "../../public/accreditation.png"
 
 const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-36">
-        <div className="flex-1 max-w-2xl lg:max-w-5xl mb-16 md:space-y-36">
+        <div className="flex-1 max-w-2xl lg:max-w-4xl mb-16 md:space-y-36">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-wide text-center lg:text-left">
             Illuminating life paths by shedding light on hidden truth.
           </h1>
@@ -43,7 +43,7 @@ const HomePage = () => {
       </div>
 
       {/* Experience Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between md:justify-around px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
+      {/* <div className="flex flex-col md:flex-row items-center justify-between md:justify-around px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
         <div className="flex-1 max-w-md mb-8 lg:mb-0">
           <Image
             src={image2}
@@ -74,19 +74,11 @@ const HomePage = () => {
             <Button />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* About Me Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
-        <div className="flex-1 max-w-2xl lg:max-w-5xl mb-8 lg:mb-0">
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-wide text-center lg:text-left">
-            About Me
-          </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl leading-loose text-gray-700 mb-8 text-center lg:text-left">
-            I have been drawn to divination processes and mystic tools since I was 7 years old and eventually discovered my gift of insight and clairvoyance. I decided to share this gift with the world to proceed forward in their life with joy and peace. I have been doing tarot readings, healings and divination procedures for others since last 7 years helping people to move on to better things in life.
-          </p>
-        </div>
-        <div className="flex-1 max-w-md">
+      <div className="flex-1 max-w-md">
           <Image
             src={image3}
             alt="Shivangi"
@@ -95,17 +87,25 @@ const HomePage = () => {
             height="800"
           />
         </div>
+        <div className="flex-1 max-w-2xl lg:max-w-4xl mb-8 lg:mb-0">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-wide text-center lg:text-left">
+            About Me
+          </h1>
+          <p className="text-lg sm:text-xl lg:text-2xl leading-loose text-gray-700 mb-8 text-center lg:text-left">
+            I have been drawn to divination processes and mystic tools since I was 7 years old and eventually discovered my gift of insight and clairvoyance. I decided to share this gift with the world to proceed forward in their life with joy and peace. I have been doing tarot readings, healings and divination procedures for others since last 7 years helping people to move on to better things in life.
+          </p>
+        </div>
       </div>
 
       {/* Services Section */}
       <Services />
 
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-around px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
-        <div className="flex-1 max-w-4xl mb-8 lg:mb-0">
+        <div className="flex flex-1 max-w-3xl mb-8 lg:mb-0 justify-center items-center">
           <Image
-            src={image4}
+            src={accreditation}
             alt="Shivangi"
-            className="rounded-e-full"
+            className="w-80"
           />
         </div>
         <div className="flex-1 max-w-4xl mb-16 md:space-y-36">
