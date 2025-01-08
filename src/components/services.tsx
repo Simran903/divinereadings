@@ -20,7 +20,7 @@ const Services = () => {
   );
 
   return (
-    <div className="min-h-screen p-4 sm:p-6 md:p-8">
+    <div id="services" className="min-h-screen p-4 sm:p-6 md:p-8">
       <div className="container mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center my-24">
           Schedule a Meeting with Me

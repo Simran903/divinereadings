@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center lg:gap-28 lg:mt-44">
+    <div id="contact" className="flex flex-col md:flex-row justify-center items-center lg:gap-28 lg:mt-44">
       {/* Left Section */}
       <div className="max-w-3xl text-center md:text-left space-y-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">

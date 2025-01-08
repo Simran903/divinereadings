@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-36">
+      <div id="home" className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-48">
         <div className="flex-1 max-w-2xl lg:max-w-4xl mb-16 md:space-y-36">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-wide text-center lg:text-left">
             Illuminating life paths by shedding light on hidden truth.
@@ -77,7 +77,7 @@ const HomePage = () => {
       </div> */}
 
       {/* About Me Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
+      <div id="about" className="flex flex-col lg:flex-row items-center justify-between md:justify-around bg-white px-6 sm:px-10 lg:px-24 py-12 lg:py-24">
       <div className="flex-1 max-w-md">
           <Image
             src={image3}
