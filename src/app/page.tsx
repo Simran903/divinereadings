@@ -17,7 +17,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <div
         id="home"
-        className="flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-24 py-44 gap-12"
+        className="flex flex-col lg:flex-row items-center justify-around px-6 sm:px-10 lg:px-24 py-44 gap-12"
       >
         <div className="flex-1 max-w-2xl lg:max-w-4xl space-y-12 lg:space-y-28 text-center lg:text-left">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 tracking-wide">
@@ -45,7 +45,7 @@ const HomePage = () => {
       {/* About Me Section */}
       <div
         id="about"
-        className="flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-24 py-12 lg:py-24 gap-12"
+        className="flex flex-col lg:flex-row items-center justify-around px-6 sm:px-10 lg:px-24 py-12 lg:py-24 gap-12"
       >
         <div className="flex-1 max-w-md">
           <Image
@@ -74,7 +74,7 @@ const HomePage = () => {
 
       {/* Accreditation Section */}
       <div
-        className="flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 lg:px-24 py-12 lg:py-24 gap-12"
+        className="flex flex-col md:flex-row items-center justify-around px-6 sm:px-10 lg:px-24 py-12 lg:py-24 gap-12"
       >
         <div className="flex-1 max-w-md md:max-w-lg lg:max-w-xl flex justify-center">
           <Image
