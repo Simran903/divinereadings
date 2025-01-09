@@ -70,7 +70,7 @@ const Accordion: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto mt-12 px-4 sm:px-6 md:px-8">
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 mt-16">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 lg:mt-44">
         Need to know more? We've got you covered.
       </h1>
       <h3 className="text-sm sm:text-base md:text-lg px-4 tracking-wide mb-8 text-center">
