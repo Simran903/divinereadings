@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 function Testimonials() {
   return (
-    <div id="testimonials" className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden my-24">
+    <div id="testimonials" className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center my-24">
         What my Clients say
       </h1>
