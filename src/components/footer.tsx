@@ -1,5 +1,7 @@
 import React from "react";
 import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
+import logo from "../../public/logo.jpg";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -8,15 +10,14 @@ const Footer: React.FC = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between text-center md:text-left space-y-12 md:space-y-0">
           {/* Logo */}
-          <div>
+          <div className="cursor-pointer">
             <h2 className="text-xl sm:text-2xl font-bold flex justify-center md:justify-start items-center space-x-2">
-              <span>DivineReadings</span>
-              {/* Placeholder for the logo */}
-              <img
-                src="/path/to/logo.svg"
+              <Image
+                src={logo}
                 alt="Logo"
-                className="h-5 w-5 md:h-6 md:w-6"
+                className="h-8 w-8 md:h-12 md:w-12"
               />
+              <span>DivineReadings</span>
             </h2>
           </div>
 
@@ -53,17 +54,17 @@ const Footer: React.FC = () => {
               </h3>
               <ul className="space-y-4 sm:space-y-5 text-base sm:text-lg">
                 <li>
-                  <a href="#instagram" className="hover:text-teal-500">
+                  <a href="https://www.instagram.com/divine_healing222/" target="_blank" className="hover:text-teal-500">
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#youtube" className="hover:text-teal-500">
+                  <a href="https://www.youtube.com/@divination777" target="_blank" className="hover:text-teal-500">
                     YouTube
                   </a>
                 </li>
                 <li>
-                  <a href="#facebook" className="hover:text-teal-500">
+                  <a href="https://www.facebook.com/shivangichandra" target="_blank" className="hover:text-teal-500">
                     Facebook
                   </a>
                 </li>
@@ -103,23 +104,26 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex justify-center space-x-6 sm:space-x-8">
             <a
-              href="#instagram"
+              href="https://www.instagram.com/divine_healing222/"
               className="hover:text-teal-500 text-2xl sm:text-3xl"
               aria-label="Instagram"
+              target="_blank"
             >
               <FaInstagram />
             </a>
             <a
-              href="#youtube"
+              href="https://www.youtube.com/@divination777"
               className="hover:text-teal-500 text-2xl sm:text-3xl"
               aria-label="YouTube"
+              target="_blank"
             >
               <FaYoutube />
             </a>
             <a
-              href="#facebook"
+              href="https://www.facebook.com/shivangichandra"
               className="hover:text-teal-500 text-2xl sm:text-3xl"
               aria-label="Facebook"
+              target="_blank"
             >
               <FaFacebook />
             </a>

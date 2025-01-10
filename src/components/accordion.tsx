@@ -16,7 +16,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 }) => {
   return (
     <div className="mb-6">
-      <div className="rounded-lg shadow-lg bg-white">
+      <div className="rounded-full shadow-lg bg-white p-3">
         <button
           className="w-full text-left px-4 py-3 sm:px-6 sm:py-4 flex justify-between items-center focus:outline-none"
           onClick={onToggle}
@@ -30,7 +30,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <p className="px-4 py-2 sm:px-6 sm:py-4 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed tracking-wide">
+        <p className="px-4 py-2 sm:px-16 sm:py-8 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed tracking-wide">
           {content}
         </p>
       </div>
@@ -50,6 +50,11 @@ const Accordion: React.FC = () => {
       title: "What is tarot reading?",
       content:
         "Tarot reading is a form of divination using a deck of tarot cards to gain insights into past, present, and future events. It involves interpreting the symbolism and imagery on the cards to provide guidance and answers to your questions.",
+    },
+    {
+      title: "What is Aakashic Records Reading?",
+      content:
+        "An Akashic Records reading is like opening a spiritual library that holds all the information about your soul's journey. It includes details about your past lives, your present experiences, and the potential paths for your future. This reading can help you understand yourself better, heal, and make choices that align with your true purpose.",
     },
     {
       title: "How do I book a tarot reading?",

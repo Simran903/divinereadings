@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../../public/logo.jpg"
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between md:justify-around px-8 py-6">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <img src="/logo.png" alt="logo" className="h-8 w-8" />
+          <Image src={logo} alt="logo" className="h-8 w-8 lg:h-12 lg:w-12" />
           <span className="text-xl font-bold text-gray-800">DivineReadings</span>
         </div>
 
@@ -50,19 +52,22 @@ const Navbar: React.FC = () => {
             isMenuOpen ? "block" : "hidden"
           } md:flex flex-col md:flex-row md:space-x-8 text-gray-800 absolute md:static top-16 left-0 right-0 bg-white shadow-md md:shadow-none p-4 md:p-0`}
         >
-          <Link href="#home" className="block py-2 md:py-0 hover:text-blue-600">
+          <Link href="#home" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Home
           </Link>
-          <Link href="#about" className="block py-2 md:py-0 hover:text-blue-600">
+          <Link href="#about" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             About Me
           </Link>
-          <Link href="#services" className="block py-2 md:py-0 hover:text-blue-600">
+          <Link href="#services" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Services
           </Link>
-          <Link href="#testimonials" className="block py-2 md:py-0 hover:text-blue-600">
+          <Link href="#media" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
+            Media
+          </Link>
+          <Link href="#testimonials" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Testimonials
           </Link>
-          <Link href="#contact" className="block py-2 md:py-0 hover:text-blue-600">
+          <Link href="#contact" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Contact
           </Link>
         </div>

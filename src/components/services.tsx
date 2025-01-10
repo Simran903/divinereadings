@@ -27,30 +27,33 @@ const Services = () => {
         </h1>
 
         {renderCards("Basic Services", [
-          { no: 1, service: "Customized switchwords", price: "INR 555" },
-          { no: 2, service: "Relationship improvement reiki", price: "INR 999" },
-          { no: 3, service: "Aura Healing", price: "INR 1000" },
-          { no: 4, service: "Career growth reiki", price: "INR 1111" },
-          { no: 5, service: "Bay Leaf Ritual for Luck", price: "INR 1111" },
-          { no: 6, service: "Balancing emotions reiki", price: "INR 2222" },
-          { no: 7, service: "Chakra cleansing", price: "INR 3333" },
-          { no: 8, service: "Cord cutting from toxicity", price: "INR 5000" },
+          { no: 1, service: "Customized Switchwords", price: "INR 500" },
+          { no: 2, service: "Aura Healing", price: "INR 1000" },
+          // { no: 3, service: "Career growth reiki", price: "INR 1111" },
+          { no: 4, service: "Chronic Pain Healing", price: "INR 1500" },
+          { no: 5, service: "Face Reading", price: "INR 1500" },
+          { no: 1, service: "Dream Interpretation", price: "INR 1500" },
+          { no: 6, service: "Angel Therapy", price: "INR 2500" },
+          { no: 7, service: "Tarrot Reading for 30mins", price: "INR 3000" },
+          // { no: 6, service: "Balancing emotions reiki", price: "INR 2222" },
+          { no: 8, service: "Chakra Cleansing", price: "INR 3500" },
+          // { no: 2, service: "Coffee Cup Readings", price: "INR 3500" },
+
         ])}
 
         {renderCards("Intermediate Services", [
-          { no: 1, service: "Face reading", price: "INR 2000" },
-          { no: 2, service: "Coffee Cup Readings", price: "INR 3500" },
-          { no: 3, service: "Aakashic records readings", price: "INR 5000" },
-          { no: 4, service: "Unlimited questions for 1 hr", price: "INR 6000" },
-          { no: 5, service: "Psychic medium readings", price: "INR 8000" },
+          // { no: 1, service: "Face reading", price: "INR 2000" },
+          { no: 2, service: "Black Magic Removal", price: "INR 4444" },
+          { no: 3, service: "Aakashic Records Reading", price: "INR 5000" },
+          { no: 4, service: "Tarrot Reading for 1 hour", price: "INR 6000" },
         ])}
 
         {renderCards("Advanced Services", [
-          { no: 1, service: "Dream Interpretation", price: "INR 2000" },
-          { no: 2, service: "Removing Nazar/Hexes/Curses", price: "INR 3000" },
-          { no: 3, service: "Manifestation techniques 1 hr session", price: "INR 5555" },
-          { no: 4, service: "Reprogramming mind 7 days online session", price: "INR 7777" },
-          { no: 5, service: "Spiritual Journey Guidance", price: "INR 10000" },
+          // { no: 2, service: "Ho'oponopono Healing", price: "INR 6500" },
+          { no: 3, service: "Violet Flame Healing", price: "INR 6000" },
+          // { no: 4, service: "Reprogramming mind 7 days online session", price: "INR 7777" },
+          { no: 6, service: "Psychic Medium Reading", price: "INR 7000" },
+          // { no: 7, service: "Spiritual Journey Guidance", price: "INR 10000" },
         ])}
 
         <div className="flex justify-center mt-16 lg:my-28">
