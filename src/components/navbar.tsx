@@ -61,6 +61,9 @@ const Navbar: React.FC = () => {
           <Link href="#services" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Services
           </Link>
+          <Link href="#media" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
+            Media
+          </Link>
           <Link href="#testimonials" className="block font-semibold py-2 md:py-0 hover:text-teal-500">
             Testimonials
           </Link>
